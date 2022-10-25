@@ -10,7 +10,7 @@ namespace Jokenpo
         public static string Jogar(IRegras regras, params Jogador[] jogadores)
         {
             {
-                if (jogadores.Length < 2)
+                if (jogadores.Count() < 2)
                     return "Necessário Pelo menos dois Jogadores no jogo";
 
                 var mesmoNome = jogadores.GroupBy(x => x.Nome);
